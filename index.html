@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>smth tab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>smth tab</h1>
+    <button id="themeBtn">Dark Mode</button>
+</header>
+<main>
+    <section class="clock">
+
+        <h2>Current Time</h2>
+        <div id="clock">00:00:00</div>
+        <p id="date"></p>
+        <p id="timezone"></p>
+    </section>
+    <section class="search">
+        <h2>Search</h2>
+        <form id="searchForm">
+            <select id="searchEngine">
+                <option value="google">Google</option>
+                <option value="duckduckgo">DuckDuckGo</option>
+                <option value="bing">Bing</option>
+            </select>
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search the web..."
+            >
+            <button type="submit">Search</button>
+        </form>
+    </section>
+    <section class="quick-links">
+        <h2>Quick Links</h2>
+        <div class="grid">
+
+            <a href="https://youtube.com" target="_blank">YouTube</a>
+            <a href="https://github.com" target="_blank">GitHub</a>
+            <a href="https://chatgpt.com" target="_blank">ChatGPT</a>
+            <a href="https://reddit.com" target="_blank">Reddit</a>
+            <a href="https://gmail.com" target="_blank">Gmail</a>
+            <a href="https://spotify.com" target="_blank">Spotify</a>
+            <a href="https://netflix.com" target="_blank">Netflix</a>
+            <a href="https://discord.com" target="_blank">Discord</a>
+        </div>
+    </section>
+    <section class="world-clocks">
+        <h2>World Clocks</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Copenhagen</h3>
+                <p id="dkTime"></p>
+            </div>
+            <div class="card">
+                <h3>London</h3>
+                <p id="ukTime"></p>
+            </div>
+            <div class="card">
+                <h3>New York</h3>
+                <p id="usTime"></p>
+            </div>
+            <div class="card">
+                <h3>Tokyo</h3>
+                <p id="jpTime"></p>
+            </div>
+        </div>
+    </section>
+    <section class="notes">
+        <h2>Notes</h2>
+        <textarea
+            id="note"
+            placeholder="Write something..."
+        ></textarea>
+        <button id="saveNote">Save Note</button>
+    </section>
+    <section class="quote">
+
+        <h2>Quote of the Day</h2>
+
+        <p id="quote">
+            Small steps every day lead to big results.
+        </p>
+
+    </section>
+</main>
+<footer>
+
+    <p>smth tab</p>
+
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
