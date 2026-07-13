@@ -14,11 +14,7 @@ function updateClock() {
         month: "long",
         year: "numeric"
     });
-
     timezone.textContent = Intl.DateTimeFormat().resolvedOptions().timeZone;
-
 }
-
 updateClock();
-
 setInterval(updateClock, 1000);
