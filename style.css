@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eef2f7;
+    color: #222;
+}
+
+header {
+    background: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+.clock-box,
+.search-box,
+.links {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.clock-box h2,
+.links h2 {
+    margin-bottom: 15px;
+}
+
+#clock {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#date {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+#timezone {
+    color: #666;
+}
+
+.search-box form {
+    display: flex;
+    gap: 10px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+}
+
+.search-box button {
+    padding: 12px 20px;
+    border: none;
+    background: #2563eb;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background: #1d4ed8;
+}
+
+.link-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.link-grid a {
+    text-decoration: none;
+    background: #2563eb;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.link-grid a:hover {
+    background: #1d4ed8;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+}
+
+@media (max-width: 600px) {
+
+    .search-box form {
+        flex-direction: column;
+    }
+
+    .search-box button {
+        width: 100%;
+    }
+
+    #clock {
+        font-size: 36px;
+    }
+
+}
